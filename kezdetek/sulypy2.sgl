@@ -12,3 +12,7 @@ b, a termékek nevét és árát ár szerint csökkenő sorrendben,
 c, a termékek nevét és egységét név szerint növekvő, azon belül egység szerint csökkenő sorrendben!
 */
 
+--1/a
+
+  SELECT SupplierName, Country FROM Suppliers
+  WHERE country = "UK" OR country = "USA"
