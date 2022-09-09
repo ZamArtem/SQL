@@ -12,7 +12,25 @@ b, a termékek nevét és árát ár szerint csökkenő sorrendben,
 c, a termékek nevét és egységét név szerint növekvő, azon belül egység szerint csökkenő sorrendben!
 */
 
---1/a
-
-  SELECT SupplierName, Country FROM Suppliers
-  WHERE country = "UK" OR country = "USA"
+ 
+ --1/a, 
+ SELECT SupplierName, Country FROM Suppliers
+ WHERE country = "UK" OR country = "USA"
+ --1/b,
+ SELECT * FROM Suppliers
+ WHERE country = "USA" AND city = "Boston" OR city = "New Orleans";
+ --1/c,
+ SELECT * FROM Customers
+ WHERE Country NOT IN ('Japan', 'Canada');
+ --2/a, 
+ SELECT * FROM Products
+ ORDER BY Price ASC;	
+ --2/b,
+ SELECT * FROM Products
+ ORDER BY price DESC;	
+ --2/c,
+ SELECT * FROM Products
+ ORDER BY price DESC; 
+ 
+ 
+  
