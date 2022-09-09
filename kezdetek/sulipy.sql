@@ -18,32 +18,32 @@ e, a 'T' betűvel kezdődő temékek nevét,
 */
 
 
-  -1/a,   
+  --1/a,   
   SELECT * FROM Categories;
-  -1/b,
+  --1/b,
   SELECT CategoryName FROM Categories;
-  -1/c,
+  --1/c,
   SELECT CategoryName, Description FROM Categories;
   
-  -2/a,
+  --2/a,
   SELECT ProductName, Price FROM Products
-  -2/b,
+  --2/b,
   SELECT ProductName, Price FROM Products
   WHERE price < 20;
-  -2/c,
+  --2/c,
   SELECT ProductName, Unit, Price FROM Products
   WHERE price BETWEEN 20 AND 30;
-  -2/d,
+  --2/d,
   SELECT ProductName, Price FROM Products
   WHERE price <> 10;
-  -2/e,
+  --2/e,
   SELECT ProductName, Price FROM Products
   WHERE ProductName LIKE "T%";
-  -2/f, 
+  --2/f, 
   SELECT ProductName, Price FROM Products
   WHERE ProductName like "Louisiana%";
   
-  -3/a,
+  --3/a,
   SELECT DISTINCT country FROM Suppliers;
 
     
