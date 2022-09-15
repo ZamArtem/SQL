@@ -41,7 +41,7 @@ e, a 'T' betűvel kezdődő temékek nevét,
   WHERE ProductName LIKE "T%";
   --2/f, 
   SELECT ProductName, Price FROM Products
-  WHERE ProductName like "Louisiana%";
+  WHERE ProductName LIKE "Louisiana%";
   
   --3/a,
   SELECT DISTINCT country FROM Suppliers;
